@@ -1,0 +1,25 @@
+.footer-address {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.footer-contacts {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #acacb0;
+  text-decoration: none;
+  transition: color var(--timing-function);
+}
+
+.footer-contacts:hover,
+.footer-contacts:focus {
+  color: var(--brand-color-focus);
+}
+
+.footer-list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
