@@ -13,13 +13,12 @@
   color: #acacb0;
   text-decoration: none;
   transition: color var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--brand-color-focus);
+  }
 }
 
-.footer-contacts:hover,
-.footer-contacts:focus {
-  color: var(--brand-color-focus);
-}
-
-.footer-list-item:not(:last-child) {
+.footer-contacts .footer-list-item:not(:last-child) {
   margin-bottom: 9px;
 }

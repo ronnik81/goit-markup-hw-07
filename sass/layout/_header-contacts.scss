@@ -17,20 +17,18 @@
   display: flex;
   transition: color var(--timing-function);
   align-items: center;
-}
-
-.header-contact-link:hover,
-.header-contact-link:focus {
-  color: var(--brand-color-focus);
+  &:hover,
+  &:focus {
+    color: var(--brand-color-focus);
+  }
+  &:hover .header-contact-icon,
+  &:focus .header-contact-icon {
+    fill: var(--brand-color-focus);
+  }
 }
 
 .header-contact-icon {
   fill: var(--brand-color-text);
   transition: fill var(--timing-function);
   margin-right: 10px;
-}
-
-.header-contact-link:hover .header-contact-icon,
-.header-contact-link:focus .header-contact-icon {
-  fill: var(--brand-color-focus);
 }

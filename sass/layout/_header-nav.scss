@@ -18,11 +18,10 @@
   transition: color var(--timing-function);
   padding-top: 32px;
   padding-bottom: 32px;
-}
-
-.nav-item-link:hover,
-.nav-item-link:focus {
-  color: var(--brand-color-focus);
+  &:hover,
+  &:focus {
+    color: var(--brand-color-focus);
+  }
 }
 
 .nav-list .nav-item + .nav-item {

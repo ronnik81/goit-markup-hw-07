@@ -73,20 +73,18 @@
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-}
-
-.team-social-link:hover,
-.team-social-link:focus {
-  background-color: var(--brand-color-focus);
-  border-radius: 50%;
+  &:hover,
+  &:focus {
+    background-color: var(--brand-color-focus);
+    border-radius: 50%;
+    &:hover .team-social-icon,
+    &:focus .team-social-icon {
+      fill: #ffffff;
+    }
+  }
 }
 
 .team-social-icon {
   fill: #afb1b8;
   transition: fill var(--timing-function);
-}
-
-.team-social-link:hover .team-social-icon,
-.team-social-link:focus .team-social-icon {
-  fill: #ffffff;
 }

@@ -33,12 +33,11 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-}
-
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: var(--brand-color-focus);
-  border-radius: 50%;
+  &:hover,
+  &:focus {
+    background-color: var(--brand-color-focus);
+    border-radius: 50%;
+  }
 }
 
 .footer-social-item + .footer-social-item {

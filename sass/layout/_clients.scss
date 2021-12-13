@@ -31,19 +31,17 @@
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
+  &:hover,
+  &:focus {
+    border-color: var(--brand-color-focus);
+  }
+  &:hover .clients-icon,
+  &:focus .clients-icon {
+    fill: var(--brand-color-focus);
+  }
 }
 
 .clients-icon {
   fill: #afb1b8;
   transition: fill var(--timing-function);
-}
-
-.clients-link:hover,
-.clients-link:focus {
-  border-color: var(--brand-color-focus);
-}
-
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-  fill: var(--brand-color-focus);
 }

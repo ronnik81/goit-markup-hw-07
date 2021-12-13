@@ -26,18 +26,15 @@
   border-radius: 4px;
   padding-left: 42px;
   transition: border-color var(--timing-function);
-}
-
-.modal-form-input:hover {
-  cursor: pointer;
-}
-
-.modal-form-input:focus {
-  border-color: var(--brand-color-focus);
-}
-
-.modal-form-input:focus + .modal-lable-icon {
-  fill: var(--brand-color-focus);
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    border-color: var(--brand-color-focus);
+  }
+  &:focus + .modal-lable-icon {
+    fill: var(--brand-color-focus);
+  }
 }
 
 .modal-form-comment {
