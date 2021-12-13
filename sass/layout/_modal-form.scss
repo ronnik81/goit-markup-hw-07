@@ -55,10 +55,9 @@
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--brand-color-text);
-}
-
-.modal-label:not(:first-child) {
-  margin-top: 10px;
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
 }
 
 .modal-lable-icon {

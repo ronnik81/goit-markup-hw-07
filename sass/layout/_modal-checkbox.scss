@@ -18,6 +18,12 @@
 
 .modal-checkbox {
   opacity: 0;
+  &:checked + .modal-checkbox-text .modal-checkbox-icon-act {
+    opacity: 1;
+    &:checked + .modal-checkbox-text .modal-checkbox-icon-dis {
+      opacity: 0;
+    }
+  }
 }
 
 .modal-checkbox-text {
@@ -41,13 +47,5 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  opacity: 0;
-}
-
-.modal-checkbox:checked + .modal-checkbox-text .modal-checkbox-icon-act {
-  opacity: 1;
-}
-
-.modal-checkbox:checked + .modal-checkbox-text .modal-checkbox-icon-dis {
   opacity: 0;
 }
