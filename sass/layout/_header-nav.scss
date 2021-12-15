@@ -11,8 +11,8 @@
   display: flex;
 }
 
-.site-nav .site-nav__item + .site-nav__item {
-  margin-left: 40px;
+.site-nav .site-nav__item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .site-nav__link {

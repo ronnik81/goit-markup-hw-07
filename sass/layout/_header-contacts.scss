@@ -7,8 +7,8 @@
   margin-left: auto;
 }
 
-.site-contacts__item + .site-contacts__item {
-  margin-left: 30px;
+.site-contacts__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .site-contacts__link {

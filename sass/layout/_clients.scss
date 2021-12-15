@@ -1,9 +1,9 @@
-.clients-section {
+.clients {
   display: block;
   padding: 94px 0;
 }
 
-.clients-title {
+.clients__title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
@@ -17,11 +17,11 @@
   display: flex;
 }
 
-.clients-list-item + .clients-list-item {
-  margin-left: 30px;
+.clients-list__item:not(:last-child) {
+  margin-right: 30px;
 }
 
-.clients-link {
+.clients-list__link {
   width: 170px;
   height: 92px;
   display: flex;
@@ -35,13 +35,13 @@
   &:focus {
     border-color: var(--brand-color-focus);
   }
-  &:hover .clients-icon,
-  &:focus .clients-icon {
+  &:hover .clients-list__icon,
+  &:focus .clients-list__icon {
     fill: var(--brand-color-focus);
   }
 }
 
-.clients-icon {
+.clients-list__icon {
   fill: #afb1b8;
   transition: fill var(--timing-function);
 }

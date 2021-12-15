@@ -1,13 +1,13 @@
-.portfolio-buttons-list {
+.portfolio-buttons {
   display: flex;
   justify-content: center;
 }
 
-.portfolio-buttons-item:not(:last-child) {
+.portfolio-buttons__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.portfolio-buttons-button {
+.portfolio-buttons__button {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
