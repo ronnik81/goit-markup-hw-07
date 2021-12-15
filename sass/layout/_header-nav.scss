@@ -3,14 +3,19 @@
   align-items: center;
 }
 
-.nav-list {
+.site-nav {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
   display: flex;
 }
-.nav-item-link {
+
+.site-nav .site-nav__item + .site-nav__item {
+  margin-left: 40px;
+}
+
+.site-nav__link {
   position: relative;
   color: var(--brand-color-main);
   text-decoration: none;
@@ -23,16 +28,11 @@
     color: var(--brand-color-focus);
   }
 }
-
-.nav-list .nav-item + .nav-item {
-  margin-left: 40px;
-}
-
-.current {
+.site-nav__current {
   color: var(--brand-color-focus);
 }
 
-.current::after {
+.site-nav__current::after {
   content: "";
   opacity: 1;
   position: absolute;

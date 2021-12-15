@@ -7,7 +7,7 @@
   text-decoration: none;
 }
 
-.logo-black {
+.logo__black {
   font-family: Raleway;
   font-size: 26px;
   line-height: 1.38;
@@ -16,7 +16,7 @@
   text-decoration: none;
 }
 
-.logo-white {
+.logo__white {
   font-family: Raleway;
   font-size: 26px;
   color: #ffffff;
@@ -25,4 +25,9 @@
 
 .header-logo {
   margin-right: 93px;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
 }

@@ -2,19 +2,19 @@
   padding: 94px 0;
 }
 
-.features-list {
+.features {
   display: flex;
 }
 
-.features-item {
+.features__item {
   width: 270px;
 }
 
-.features-item + .features-item {
+.features__item + .features__item {
   margin-left: 30px;
 }
 
-.features-image {
+.features__image {
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
@@ -24,7 +24,7 @@
   align-items: center;
 }
 
-.features-title {
+.features__title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.17;
@@ -34,7 +34,7 @@
   margin-top: 30px;
 }
 
-.features-text {
+.features__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;

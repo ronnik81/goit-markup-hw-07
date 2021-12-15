@@ -327,7 +327,7 @@ body {
   text-decoration: none;
 }
 
-.logo-black {
+.logo__black {
   font-family: Raleway;
   font-size: 26px;
   line-height: 1.38;
@@ -336,7 +336,7 @@ body {
   text-decoration: none;
 }
 
-.logo-white {
+.logo__white {
   font-family: Raleway;
   font-size: 26px;
   color: #ffffff;
@@ -347,11 +347,16 @@ body {
   margin-right: 93px;
 }
 
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
 header {
   border-bottom: 1px solid #ececec;
 }
 
-.header-container {
+.header {
   display: flex;
   align-items: center;
 }
@@ -375,7 +380,7 @@ header {
   align-items: center;
 }
 
-.nav-list {
+.site-nav {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.17;
@@ -383,7 +388,11 @@ header {
   display: flex;
 }
 
-.nav-item-link {
+.site-nav .site-nav__item + .site-nav__item {
+  margin-left: 40px;
+}
+
+.site-nav__link {
   position: relative;
   color: var(--brand-color-main);
   text-decoration: none;
@@ -392,19 +401,15 @@ header {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.nav-item-link:hover, .nav-item-link:focus {
+.site-nav__link:hover, .site-nav__link:focus {
   color: var(--brand-color-focus);
 }
 
-.nav-list .nav-item + .nav-item {
-  margin-left: 40px;
-}
-
-.current {
+.site-nav__current {
   color: var(--brand-color-focus);
 }
 
-.current::after {
+.site-nav__current::after {
   content: "";
   opacity: 1;
   position: absolute;
@@ -416,7 +421,7 @@ header {
   border-radius: 2px;
 }
 
-.header-contact-list {
+.site-contacts {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.17;
@@ -425,31 +430,31 @@ header {
   margin-left: auto;
 }
 
-.header-contact-item + .header-contact-item {
+.site-contacts__item + .site-contacts__item {
   margin-left: 30px;
 }
 
-.header-contact-link {
+.site-contacts__link {
   color: var(--brand-color-text);
   text-decoration: none;
   display: flex;
   transition: color var(--timing-function);
   align-items: center;
 }
-.header-contact-link:hover, .header-contact-link:focus {
+.site-contacts__link:hover, .site-contacts__link:focus {
   color: var(--brand-color-focus);
 }
-.header-contact-link:hover .header-contact-icon, .header-contact-link:focus .header-contact-icon {
+.site-contacts__link:hover .site-contacts__icon, .site-contacts__link:focus .site-contacts__icon {
   fill: var(--brand-color-focus);
 }
 
-.header-contact-icon {
+.site-contacts__icon {
   fill: var(--brand-color-text);
   transition: fill var(--timing-function);
   margin-right: 10px;
 }
 
-.hero-section {
+.hero {
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
@@ -464,7 +469,7 @@ header {
   margin-right: auto;
 }
 
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -481,19 +486,19 @@ header {
   padding: 94px 0;
 }
 
-.features-list {
+.features {
   display: flex;
 }
 
-.features-item {
+.features__item {
   width: 270px;
 }
 
-.features-item + .features-item {
+.features__item + .features__item {
   margin-left: 30px;
 }
 
-.features-image {
+.features__image {
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
@@ -503,7 +508,7 @@ header {
   align-items: center;
 }
 
-.features-title {
+.features__title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.17;
@@ -513,7 +518,7 @@ header {
   margin-top: 30px;
 }
 
-.features-text {
+.features__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -521,7 +526,7 @@ header {
   margin-top: 10px;
 }
 
-.services-title {
+.services__title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
@@ -536,14 +541,14 @@ header {
   padding-bottom: 94px;
 }
 
-.services-list-item {
+.services-list__item {
   position: relative;
 }
-.services-list-item:not(:last-child) {
+.services-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.services-list-text {
+.services-list__text {
   position: absolute;
   width: 100%;
   left: 0;
@@ -699,11 +704,6 @@ header {
 
 .footer-container {
   display: flex;
-}
-
-.footer-logo {
-  display: inline-block;
-  margin-bottom: 20px;
 }
 
 .footer-address {

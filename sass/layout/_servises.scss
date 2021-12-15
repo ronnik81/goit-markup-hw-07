@@ -1,4 +1,4 @@
-.services-title {
+.services__title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
@@ -13,14 +13,14 @@
   padding-bottom: 94px;
 }
 
-.services-list-item {
+.services-list__item {
   position: relative;
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.services-list-text {
+.services-list__text {
   position: absolute;
   width: 100%;
   left: 0;

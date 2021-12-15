@@ -3,8 +3,8 @@
 @import "./utils/hidden";
 @import "./utils/resets";
 @import "./components/body-container";
-@import "./components/header-logo";
-@import "./components/_header-container";
+@import "./components/logo";
+@import "./layout/_header";
 @import "./components/main-button";
 @import "./layout/header-nav";
 @import "./layout/header-contacts";
@@ -13,8 +13,7 @@
 @import "./layout/servises";
 @import "./layout/team";
 @import "./layout/clients";
-@import "./components/footer-container";
-@import "./components/footer-logo";
+@import "./layout/footer-container";
 @import "./layout/footer-contacts";
 @import "./layout/footer-social";
 @import "./layout/footer-subscribe";
